@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="calculator.js"></script>
+    <link rel="stylesheet" href="calculator.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="calculadora">
+      <div class="dis">
+        <input class="display-box" type="text" id="result" disabled />
+      </div>
+      <div class="teclado">
+        <input class="button" type="button" value=" - " onclick="display(n1 + ' - ' + n2), menos();">
+        <input class="button" type="button" value=" + " onclick="display(n1+' + ' +n2), soma();">
+        <input class="button" type="button" value=" = " onclick="display(res);">
+      </div>
+      <div class="teclado">
+        <input class="button" type="button" value=" x " onclick="display(n1 + ' x ' + n2), mutiplicacao();">
+        <input class="button" type="button" value=" / " onclick="display(n1+' / ' +n2), divisao();">
+        <input class="button" type="button" value=" C " onclick="clean();">
+      </div>
+      <input class="iniciar" type="button" value="INICIAR" onclick="iniciar()">
+      <p>PALOMA GREGOL</p>
+    </div>
+  </body>
+</html>
